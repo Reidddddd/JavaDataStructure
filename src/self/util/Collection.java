@@ -22,7 +22,7 @@ public interface Collection<E> extends Iterable<E> {
 
   boolean containsAll(Collection<?> c);
 
-  boolean addAll(Collection<?> c);
+  boolean addAll(Collection<? extends E> c);
 
   boolean removeAll(Collection<?> c);
 
