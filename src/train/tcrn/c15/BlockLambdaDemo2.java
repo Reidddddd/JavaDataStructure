@@ -11,7 +11,3 @@ public class BlockLambdaDemo2 {
     System.out.println("Expression reversed is " + reverse.func("Expression"));
   }
 }
-
-interface StringFunc {
-  String func(String n);
-}

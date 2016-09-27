@@ -1,7 +1,7 @@
 package train.tcrn.c15;
 
 public class LambdaAsArgumentsDemo {
-  static String stringOp(StringFunc2 sf, String s) {
+  static String stringOp(StringFunc sf, String s) {
     return sf.func(s);
   }
 
@@ -21,15 +21,11 @@ public class LambdaAsArgumentsDemo {
     }, inStr);
     System.out.println("The string with spaces removed: " + outStr);
 
-    StringFunc2 reverse = str -> {
+    StringFunc reverse = str -> {
       String result = "";
       for (int i = str.length() - 1; i >= 0; i--) result += str.charAt(i);
       return result;
     };
     System.out.println("The string reversed: " + stringOp(reverse, inStr));
   }
-}
-
-interface StringFunc2 {
-  String func(String s);
 }
