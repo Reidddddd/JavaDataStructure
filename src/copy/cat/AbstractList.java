@@ -1,4 +1,4 @@
-package self.util;
+package copy.cat;
 
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;

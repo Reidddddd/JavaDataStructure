@@ -1,4 +1,4 @@
-package self.util;
+package copy.cat;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

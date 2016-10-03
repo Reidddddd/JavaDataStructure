@@ -1,4 +1,4 @@
-package self.util;
+package copy.cat;
 
 import java.util.Iterator;
 import java.util.ListIterator;
