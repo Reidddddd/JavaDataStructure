@@ -27,7 +27,7 @@ public class ArrayBlockingQueue<E> {
   /** Conditions for waiting takes */
   private final Condition notEmpty;
 
-  /** Condtions for waiting puts */
+  /** Conditions for waiting puts */
   private final Condition notFull;
 
   final int dec(int i) {
