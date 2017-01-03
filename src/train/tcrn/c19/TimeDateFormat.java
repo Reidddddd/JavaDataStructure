@@ -1,0 +1,25 @@
+package train.tcrn.c19;
+
+import java.util.Calendar;
+import java.util.Formatter;
+
+public class TimeDateFormat {
+  public static void main(String[] args) {
+    Formatter fmt = new Formatter();
+    Calendar cal = Calendar.getInstance();
+    // Display standard 12-hour time format.
+    fmt.format("%tr", cal);
+    System.out.println(fmt);
+    fmt.close();
+    // Display complete time and date information.
+    fmt = new Formatter();
+    fmt.format("%tc", cal);
+    System.out.println(fmt);
+    fmt.close();
+    // Display month by name and number.
+    fmt = new Formatter();
+    fmt.format("%tB %tb %tm", cal, cal, cal);
+    System.out.println(fmt);
+    fmt.close();
+  }
+}
